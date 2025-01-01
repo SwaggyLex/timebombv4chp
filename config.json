@@ -6,5 +6,7 @@
         "first_success": 1198698309892706344,
         "second_success": 1254373963237167175
     },
-    "log_channel": 1324111392797757530
+    "log_channel": 1324111392797757530,
+    "backup_dir": "backups",
+    "max_backups": 5
 } 

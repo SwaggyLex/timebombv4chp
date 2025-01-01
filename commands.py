@@ -112,6 +112,7 @@ class AdminCommands(commands.Cog):
             user_id = str(member.id)
             member_roles = member.roles
             
+            # Scenario 1: No roles or starter role - give first timer
             if not member_roles or starter_role in member_roles:
                 end_time = current_time + datetime.timedelta(days=3)
                 self.bot.user_data[user_id] = {
@@ -121,12 +122,19 @@ class AdminCommands(commands.Cog):
                     "second_bomb_active": False
                 }
                 
+            # Scenario 2: Has first target role - give second timer
             elif first_target in member_roles:
+                # Initialize user data if it doesn't exist
+                if user_id not in self.bot.user_data:
+                    self.bot.user_data[user_id] = {
+                        "join_date": current_time.isoformat(),
+                        "warnings_sent": {},
+                    }
+                
                 end_time = current_time + datetime.timedelta(days=14)
                 self.bot.user_data[user_id].update({
                     "second_bomb_active": True,
                     "second_bomb_end": end_time.isoformat(),
-                    "warnings_sent": self.bot.user_data[user_id].get("warnings_sent", {})
                 })
         
         self.bot.save_user_data()
