@@ -1,0 +1,71 @@
+2024-12-30 05:27:01,651 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-12-30 05:27:01,652 - INFO - Configuration loaded successfully
+2024-12-30 05:27:01,652 - WARNING - No user_data.json found, creating new
+2024-12-30 05:27:01,652 - INFO - User data saved with backup
+2024-12-30 05:27:01,652 - INFO - logging in using static token
+2024-12-30 05:27:01,880 - CRITICAL - Failed to start bot: Improper token has been passed.
+2024-12-30 05:29:17,563 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-12-30 05:29:17,564 - INFO - Configuration loaded successfully
+2024-12-30 05:29:17,564 - INFO - User data loaded successfully
+2024-12-30 05:29:17,564 - INFO - logging in using static token
+2024-12-30 05:29:17,761 - CRITICAL - Failed to start bot: Improper token has been passed.
+2024-12-30 05:29:42,193 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-12-30 05:29:42,194 - INFO - Configuration loaded successfully
+2024-12-30 05:29:42,194 - INFO - User data loaded successfully
+2024-12-30 05:29:42,194 - INFO - logging in using static token
+2024-12-30 05:29:42,410 - CRITICAL - Failed to start bot: Improper token has been passed.
+2024-12-30 05:30:14,268 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-12-30 05:30:14,269 - INFO - Configuration loaded successfully
+2024-12-30 05:30:14,269 - INFO - User data loaded successfully
+2024-12-30 05:30:14,269 - INFO - logging in using static token
+2024-12-30 05:30:14,556 - CRITICAL - Failed to start bot: Improper token has been passed.
+2024-12-30 05:30:29,418 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-12-30 05:30:29,418 - INFO - Configuration loaded successfully
+2024-12-30 05:30:29,418 - INFO - User data loaded successfully
+2024-12-30 05:30:29,419 - INFO - logging in using static token
+2024-12-30 05:30:29,621 - CRITICAL - Failed to start bot: Improper token has been passed.
+2024-12-30 05:31:00,256 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-12-30 05:31:00,256 - INFO - Configuration loaded successfully
+2024-12-30 05:31:00,256 - INFO - User data loaded successfully
+2024-12-30 05:31:00,257 - INFO - logging in using static token
+2024-12-30 05:31:00,503 - CRITICAL - Failed to start bot: Improper token has been passed.
+2024-12-30 05:31:45,265 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-12-30 05:31:45,266 - INFO - Configuration loaded successfully
+2024-12-30 05:31:45,266 - INFO - User data loaded successfully
+2024-12-30 05:31:45,266 - INFO - logging in using static token
+2024-12-30 05:31:45,458 - CRITICAL - Failed to start bot: Improper token has been passed.
+2024-12-30 05:32:26,223 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-12-30 05:32:26,224 - INFO - Configuration loaded successfully
+2024-12-30 05:32:26,224 - INFO - User data loaded successfully
+2024-12-30 05:32:26,225 - INFO - logging in using static token
+2024-12-30 05:32:26,422 - CRITICAL - Failed to start bot: Improper token has been passed.
+2024-12-30 05:32:51,331 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-12-30 05:32:51,331 - INFO - Configuration loaded successfully
+2024-12-30 05:32:51,331 - INFO - User data loaded successfully
+2024-12-30 05:32:51,331 - INFO - logging in using static token
+2024-12-30 05:32:51,526 - CRITICAL - Failed to start bot: Improper token has been passed.
+2024-12-30 05:34:31,599 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-12-30 05:34:31,600 - INFO - Configuration loaded successfully
+2024-12-30 05:34:31,600 - INFO - User data loaded successfully
+2024-12-30 05:34:31,600 - INFO - logging in using static token
+2024-12-30 05:34:31,796 - CRITICAL - Failed to start bot: Improper token has been passed.
+2024-12-30 05:34:42,924 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-12-30 05:34:42,925 - INFO - Configuration loaded successfully
+2024-12-30 05:34:42,925 - INFO - User data loaded successfully
+2024-12-30 05:34:42,925 - INFO - logging in using static token
+2024-12-30 05:34:43,132 - CRITICAL - Failed to start bot: Improper token has been passed.
+2024-12-30 05:36:32,630 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-12-30 05:36:32,631 - INFO - Configuration loaded successfully
+2024-12-30 05:36:32,631 - INFO - User data loaded successfully
+2024-12-30 05:36:32,631 - INFO - logging in using static token
+2024-12-30 05:36:32,861 - CRITICAL - Failed to start bot: Improper token has been passed.
+2024-12-30 05:37:27,631 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-12-30 05:37:27,632 - INFO - Configuration loaded successfully
+2024-12-30 05:37:27,632 - INFO - User data loaded successfully
+2024-12-30 05:37:27,633 - INFO - logging in using static token
+2024-12-30 05:37:27,818 - CRITICAL - Failed to start bot: Improper token has been passed.
+2024-12-30 05:38:14,267 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-12-30 05:38:14,267 - INFO - Configuration loaded successfully
+2024-12-30 05:38:14,267 - INFO - User data loaded successfully
+2024-12-30 05:38:14,268 - INFO - logging in using static token
+2024-12-30 05:38:14,468 - CRITICAL - Failed to start bot: Improper token has been passed.
