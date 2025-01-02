@@ -1,12 +1,12 @@
 {
-    "guild_id": 1251633729366003834,
+    "guild_id": 1198354382828347523,
     "roles": {
-        "first_jail": 1321533049174753323,
-        "second_jail": 1324504525343817778,
-        "first_success": 1263140879066206250,
-        "second_success": 1263140917376978984
+        "first_jail": 1320481766649106514,
+        "second_jail": 1323085573379981422,
+        "first_success": 1198698309892706344,
+        "second_success": 1254373963237167175
     },
-    "log_channel": 1324504876310335529,
+    "log_channel": 1324111392797757530,
     "backup_dir": "backups",
     "max_backups": 5
 } 
