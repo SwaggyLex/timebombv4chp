@@ -4,6 +4,8 @@ import discord
 import datetime
 import logging
 import utils
+import json
+import io
 
 class AdminCommands(commands.Cog):
     def __init__(self, bot):
@@ -232,6 +234,28 @@ class AdminCommands(commands.Cog):
             f"Server reset complete! All timers have been reset.\n"
             f"Total users with new timers: {after_count}\n"
             f"Previous users with timers: {before_count}",
+            ephemeral=True
+        )
+
+    @app_commands.command(name="getdata")
+    @app_commands.default_permissions(administrator=True)
+    async def getdata(self, interaction: discord.Interaction):
+        """Get current user data"""
+        await interaction.response.defer(ephemeral=True)
+        
+        # Convert data to JSON string with pretty formatting
+        data_str = json.dumps(self.bot.user_data, indent=4)
+        
+        # Create file object
+        file = discord.File(
+            io.StringIO(data_str),
+            filename=f"user_data_{datetime.datetime.utcnow().strftime('%Y%m%d_%H%M%S')}.json"
+        )
+        
+        # Send file
+        await interaction.followup.send(
+            "Here's the current user data:",
+            file=file,
             ephemeral=True
         )
 
