@@ -40,38 +40,25 @@ class TimeBombBot(commands.Bot):
             raise SystemExit("Could not load configuration!")
 
     def load_user_data(self):
-        """Load user data with persistence"""
         try:
-            # Try loading from persistent storage
-            with open("/data/user_data.json", 'r') as f:
-                self.user_data = json.load(f)
-            print("User data loaded successfully from persistent storage")
-        except:
-            try:
-                # Fallback to local file
-                with open("user_data.json", 'r') as f:
+            if os.path.exists('user_data.json'):
+                with open('user_data.json', 'r') as f:
                     self.user_data = json.load(f)
-                print("User data loaded from local storage")
-            except:
-                print("No existing data found, starting fresh")
-                self.user_data = {}
+                print("User data loaded successfully")
+            else:
+                print("No existing user data found, starting fresh")
+        except Exception as e:
+            print(f"Error loading user data: {e}")
+            self.user_data = {}
 
     def save_user_data(self):
-        """Save user data with persistence"""
-        # Ensure data directory exists
-        os.makedirs("/data", exist_ok=True)
-        
         try:
-            # Save to persistent storage
-            with open("/data/user_data.json", 'w') as f:
+            with open('user_data.json', 'w') as f:
                 json.dump(self.user_data, f, indent=4)
-            print("User data saved successfully to persistent storage")
+            print("User data saved successfully")
         except Exception as e:
-            print(f"Error saving to persistent storage: {e}")
-            # Fallback to local save
-            with open("user_data.json", 'w') as f:
-                json.dump(self.user_data, f, indent=4)
-
+            print(f"Error saving user data: {e}")
+    
     @commands.Cog.listener()
     async def on_member_join(self, member: discord.Member):
         """Handle new member joins"""
