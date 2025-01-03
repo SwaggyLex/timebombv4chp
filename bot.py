@@ -40,37 +40,36 @@ class TimeBombBot(commands.Bot):
             raise SystemExit("Could not load configuration!")
 
     def load_user_data(self):
-        """Load user data with persistence"""
+        """Load user data from single persistent file"""
+        data_file = "/data/persistent_user_data.json"
+        
         try:
             # Try loading from persistent storage
-            with open("/data/user_data.json", 'r') as f:
+            with open(data_file, 'r') as f:
                 self.user_data = json.load(f)
-            print("User data loaded successfully from persistent storage")
-        except:
-            try:
-                # Fallback to local file
-                with open("user_data.json", 'r') as f:
-                    self.user_data = json.load(f)
-                print("User data loaded from local storage")
-            except:
-                print("No existing data found, starting fresh")
-                self.user_data = {}
+            print(f"User data loaded successfully from {data_file}")
+        except FileNotFoundError:
+            print("No existing data found, starting fresh")
+            self.user_data = {}
+        except Exception as e:
+            print(f"Error loading data: {e}")
+            self.user_data = {}
 
     def save_user_data(self):
-        """Save user data with persistence"""
+        """Save user data to single persistent file"""
         # Ensure data directory exists
         os.makedirs("/data", exist_ok=True)
         
+        # Use a single, consistent filename
+        data_file = "/data/persistent_user_data.json"
+        
         try:
             # Save to persistent storage
-            with open("/data/user_data.json", 'w') as f:
+            with open(data_file, 'w') as f:
                 json.dump(self.user_data, f, indent=4)
-            print("User data saved successfully to persistent storage")
+            print(f"User data saved successfully to {data_file}")
         except Exception as e:
             print(f"Error saving to persistent storage: {e}")
-            # Fallback to local save
-            with open("user_data.json", 'w') as f:
-                json.dump(self.user_data, f, indent=4)
 
     @commands.Cog.listener()
     async def on_member_join(self, member: discord.Member):
